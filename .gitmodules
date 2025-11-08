@@ -1,0 +1,3 @@
+[submodule "ansible-roboshop-roles-terraform"]
+	path = ansible-roboshop-roles-terraform
+	url = https://github.com/abhishekyalla2210/ansible-roboshop-roles-terraform.git
