@@ -1,7 +1,6 @@
-plugin: aws_ec2           # must stay aws_ec2
-regions:
-  - us-east-1
-filters:
-  tag:Name: roboshop-dev-bastion
-hostnames:
-  - public_ip
+- name: Print each host name and IP
+  debug:
+    msg: "Host {{ inventory_hostname }} has IP {{ ansible_host }}"
+
+- name: Ping each host to check connectivity
+  ping:
