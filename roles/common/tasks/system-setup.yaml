@@ -1,11 +1,11 @@
-- name: copy mongodb service
+- name: copy {{ component }} service
   ansible.builtin.template:
-    src: "mongodb.service.j2"
-    dest: "/etc/systemd/system/mongodb.service"
+    src: "{{ component }}.service.j2"
+    dest: "/etc/systemd/system/{{ component }}.service"
   notify: daemon reload
 
 - name: start the service
   ansible.builtin.service:
-    name: "mongodb"
+    name: "{{ component }}"
     state: restarted
     enabled: yes
