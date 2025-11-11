@@ -6,6 +6,6 @@
 
 - name: start the service
   ansible.builtin.service:
-    name: "catalogue"
+    name: "{{ component }}"
     state: restarted
     enabled: yes
