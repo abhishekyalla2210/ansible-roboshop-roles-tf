@@ -5,7 +5,7 @@
 
   vars:
     ami_id: ami-09c813fb71547fc4f
-    sg_id: sg-03c6dffbde757a30b
+    sg_id: sg-03e793adda59aab0e
             
     domain_name: "abhishekdev.fun"
     # instances:
