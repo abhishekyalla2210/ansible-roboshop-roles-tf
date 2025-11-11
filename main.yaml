@@ -5,11 +5,4 @@
   roles:
   - "{{ component }}"
 
-  ansible-playbook -i inventory.ini main.yaml -e "component=mysql"
   
-  ansible-playbook -i inventory.ini main.yaml -e "component=redis"
- 
-
-  ansible-playbook -i inventory.ini main.yaml -e "component=rabbitmq"
-  
-  ansible-playbook -i inventory.ini main.yaml -e "component=mongodb"
