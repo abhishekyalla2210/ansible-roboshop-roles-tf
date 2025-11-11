@@ -42,7 +42,7 @@
     amazon.aws.route53:
       state: present
       zone: "{{ domain_name }}"
-      record: "{{ item.item }}.{{ domain_name }}" # mongodb.abhishekdev.fun
+      record: "{{ item.item }}.{{ domain_name }}" # mongodb-dev.abhishekdev.fun
       type: A
       ttl: 1
       value: "{{ item.instances[0].private_ip_address }}"
