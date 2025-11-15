@@ -1,6 +1,0 @@
-- name: Print each host name and IP
-  debug:
-    msg: "Host {{ inventory_hostname }} has IP {{ ansible_host }}"
-
-- name: Ping each host to check connectivity
-  ping:
