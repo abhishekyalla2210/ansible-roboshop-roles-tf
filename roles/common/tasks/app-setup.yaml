@@ -32,3 +32,21 @@
     src: /tmp/{{ component }}.zip
     dest: /app
     remote_src: yes
+
+- name: creating roboshop user
+  user:
+    name: roboshop
+
+
+- name: instaling nodejs
+  ansible.builtin.package:
+    name: {{ item }}
+    state: present
+    loop:
+    - nodejs
+    - git
+
+- name: lconing repo
+  git:
+    repo: 
+    dest: /app/cloningdir
